@@ -1,0 +1,2715 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='COVID clinical trials' inline='true' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID clinical trials' name='textscan.0jxwati0u049an1gndk6s1gqqn48'>
+            <connection class='textscan' directory='C:/Users/Lenovo/OneDrive/Desktop/Unified Mentors/Projects/Covid 19/Dataset' filename='COVID clinical trials.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jxwati0u049an1gndk6s1gqqn48' name='COVID clinical trials.csv' table='[COVID clinical trials#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='NCT Number' ordinal='1' />
+            <column datatype='string' name='Title' ordinal='2' />
+            <column datatype='string' name='Acronym' ordinal='3' />
+            <column datatype='string' name='Status' ordinal='4' />
+            <column datatype='string' name='Study Results' ordinal='5' />
+            <column datatype='string' name='Conditions' ordinal='6' />
+            <column datatype='string' name='Interventions' ordinal='7' />
+            <column datatype='string' name='Outcome Measures' ordinal='8' />
+            <column datatype='string' name='Sponsor/Collaborators' ordinal='9' />
+            <column datatype='string' name='Gender' ordinal='10' />
+            <column datatype='string' name='Age' ordinal='11' />
+            <column datatype='string' name='Phases' ordinal='12' />
+            <column datatype='integer' name='Enrollment' ordinal='13' />
+            <column datatype='string' name='Funded Bys' ordinal='14' />
+            <column datatype='string' name='Study Type' ordinal='15' />
+            <column datatype='string' name='Study Designs' ordinal='16' />
+            <column datatype='string' name='Other IDs' ordinal='17' />
+            <column datatype='datetime' date-parse-format='MMMM dd, yyyy|#|#|MMM yyyy' name='Start Date' ordinal='18' />
+            <column datatype='string' name='Primary Completion Date' ordinal='19' />
+            <column datatype='string' name='Completion Date' ordinal='20' />
+            <column datatype='date' name='First Posted' ordinal='21' />
+            <column datatype='date' name='Results First Posted' ordinal='22' />
+            <column datatype='date' name='Last Update Posted' ordinal='23' />
+            <column datatype='string' name='Locations' ordinal='24' />
+            <column datatype='string' name='Study Documents' ordinal='25' />
+            <column datatype='string' name='URL' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NCT Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NCT Number]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>NCT Number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acronym</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acronym]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Acronym</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study Results</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Study Results]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Study Results</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conditions]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Conditions</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interventions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interventions]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Interventions</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outcome Measures</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Outcome Measures]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Outcome Measures</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sponsor/Collaborators</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sponsor/Collaborators]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Sponsor/Collaborators</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phases</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phases]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Phases</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Enrollment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Enrollment]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Enrollment</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Funded Bys</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Funded Bys]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Funded Bys</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Study Type]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Study Type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study Designs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Study Designs]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Study Designs</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other IDs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other IDs]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Other IDs</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Start Date]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Start Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Completion Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary Completion Date]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Primary Completion Date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Completion Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Completion Date]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Completion Date</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Posted</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[First Posted]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>First Posted</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Results First Posted</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Results First Posted]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Results First Posted</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Update Posted</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last Update Posted]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Last Update Posted</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Locations</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Locations]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Locations</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study Documents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Study Documents]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>Study Documents</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL]</local-name>
+            <parent-name>[COVID clinical trials.csv]</parent-name>
+            <remote-alias>URL</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='%null%' value='&quot;India&quot;' />
+          <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+          <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+          <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+      </column>
+      <column datatype='string' name='[Conditions]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Enrollment (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='5' formula='[Enrollment]' peg='0' size='687692' />
+      </column>
+      <column datatype='integer' name='[Enrollment]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Funded Bys]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Sponsor/Collaborators]' role='dimension' type='nominal' />
+      <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <column caption='COVID clinical trials.csv' datatype='table' name='[__tableau_internal_object_id__].[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]' role='measure' type='quantitative' />
+      <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_786441139336458241]' derivation='None' name='[none:Calculation_786441139336458241:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Conditions)' hidden='true' name='[Action (Conditions)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Conditions]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_786441139336458241]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country,MONTH(Start Date))' hidden='true' name='[Action (Country,MONTH(Start Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_786441139336458241]' />
+          <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Funded Bys,Status)' hidden='true' name='[Action (Funded Bys,Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Funded Bys]' />
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Start Date),Status)' hidden='true' name='[Action (MONTH(Start Date),Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Phase Clean,Status)' hidden='true' name='[Action (Phase Clean,Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Sponsor/Collaborators)' hidden='true' name='[Action (Sponsor/Collaborators)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Sponsor/Collaborators]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Status)' hidden='true' name='[Action (Status)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Status]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Lenovo/AppData/Local/Temp/TableauTemp/#TableauTemp_0g56ofi1fuf3f6104vyl50ubkrfa.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/17/2025 12:49:15 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='MMMM dd, yyyy|#|#|MMM yyyy' name='Start Date' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5783</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NCT Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NCT Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NCT Number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Acronym</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Acronym]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Acronym</remote-alias>
+              <ordinal>3</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2157</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Study Results</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Study Results]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Study Results</remote-alias>
+              <ordinal>5</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conditions</remote-alias>
+              <ordinal>6</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1750</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interventions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Interventions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interventions</remote-alias>
+              <ordinal>7</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2566</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outcome Measures</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outcome Measures]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outcome Measures</remote-alias>
+              <ordinal>8</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5356</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sponsor/Collaborators</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sponsor/Collaborators]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sponsor/Collaborators</remote-alias>
+              <ordinal>9</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2058</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>10</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>11</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>268</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phases</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Phases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phases</remote-alias>
+              <ordinal>12</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Enrollment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Enrollment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Enrollment</remote-alias>
+              <ordinal>13</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>634</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Funded Bys</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Funded Bys]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Funded Bys</remote-alias>
+              <ordinal>14</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Study Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Study Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Study Type</remote-alias>
+              <ordinal>15</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Study Designs</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Study Designs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Study Designs</remote-alias>
+              <ordinal>16</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Other IDs</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Other IDs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Other IDs</remote-alias>
+              <ordinal>17</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Start Date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Start Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Start Date</remote-alias>
+              <ordinal>18</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Primary Completion Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Primary Completion Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Primary Completion Date</remote-alias>
+              <ordinal>19</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>705</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Completion Date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Completion Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Completion Date</remote-alias>
+              <ordinal>20</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>724</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First Posted</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[First Posted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>First Posted</remote-alias>
+              <ordinal>21</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>368</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Results First Posted</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Results First Posted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Results First Posted</remote-alias>
+              <ordinal>22</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Update Posted</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Last Update Posted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last Update Posted</remote-alias>
+              <ordinal>23</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>296</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Locations</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Locations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Locations</remote-alias>
+              <ordinal>24</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2430</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Study Documents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Study Documents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Study Documents</remote-alias>
+              <ordinal>25</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>URL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[URL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>URL</remote-alias>
+              <ordinal>26</ordinal>
+              <family>COVID clinical trials.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Status:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Withdrawn&quot;</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>&quot;Terminated&quot;</bucket>
+            </map>
+            <map to='#406d9b'>
+              <bucket>&quot;Temporarily not available&quot;</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>&quot;Suspended&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;Recruiting&quot;</bucket>
+            </map>
+            <map to='#6091bc'>
+              <bucket>&quot;Not yet recruiting&quot;</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>&quot;No longer available&quot;</bucket>
+            </map>
+            <map to='#7aaad0'>
+              <bucket>&quot;Enrolling by invitation&quot;</bucket>
+            </map>
+            <map to='#87b7d9'>
+              <bucket>&quot;Completed&quot;</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>&quot;Available&quot;</bucket>
+            </map>
+            <map to='#a7d1ea'>
+              <bucket>&quot;Approved for marketing&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Active, not recruiting&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_786441139336458241:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Côte D&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Martinique&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Democratic Republic of the&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Republic of&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Réunion&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cape Verde&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;French Guiana&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Islamic Republic of&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='COVID clinical trials.csv' id='COVID clinical trials.csv_49FB2959CD9C4CFE9EE999CCE5A257C2'>
+            <properties context=''>
+              <relation connection='textscan.0jxwati0u049an1gndk6s1gqqn48' name='COVID clinical trials.csv' table='[COVID clinical trials#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='NCT Number' ordinal='1' />
+                  <column datatype='string' name='Title' ordinal='2' />
+                  <column datatype='string' name='Acronym' ordinal='3' />
+                  <column datatype='string' name='Status' ordinal='4' />
+                  <column datatype='string' name='Study Results' ordinal='5' />
+                  <column datatype='string' name='Conditions' ordinal='6' />
+                  <column datatype='string' name='Interventions' ordinal='7' />
+                  <column datatype='string' name='Outcome Measures' ordinal='8' />
+                  <column datatype='string' name='Sponsor/Collaborators' ordinal='9' />
+                  <column datatype='string' name='Gender' ordinal='10' />
+                  <column datatype='string' name='Age' ordinal='11' />
+                  <column datatype='string' name='Phases' ordinal='12' />
+                  <column datatype='integer' name='Enrollment' ordinal='13' />
+                  <column datatype='string' name='Funded Bys' ordinal='14' />
+                  <column datatype='string' name='Study Type' ordinal='15' />
+                  <column datatype='string' name='Study Designs' ordinal='16' />
+                  <column datatype='string' name='Other IDs' ordinal='17' />
+                  <column datatype='datetime' date-parse-format='MMMM dd, yyyy|#|#|MMM yyyy' name='Start Date' ordinal='18' />
+                  <column datatype='string' name='Primary Completion Date' ordinal='19' />
+                  <column datatype='string' name='Completion Date' ordinal='20' />
+                  <column datatype='date' name='First Posted' ordinal='21' />
+                  <column datatype='date' name='Results First Posted' ordinal='22' />
+                  <column datatype='date' name='Last Update Posted' ordinal='23' />
+                  <column datatype='string' name='Locations' ordinal='24' />
+                  <column datatype='string' name='Study Documents' ordinal='25' />
+                  <column datatype='string' name='URL' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='MMMM dd, yyyy|#|#|MMM yyyy' name='Start Date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7FD131D89CE74ABE8BCC4ABB51F271A9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Total Trials Card' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_6636AA2F2EB749EDA246FD94EDE72D5C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Recruiting Trials ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_CBF5F2C37FCE404CAC9AC5EDAA5A6471]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Completed Trials' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_5DA89C05CFAB49FA9479213081B4DEE0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Number of Trials by Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_DCC0BFDE2381488092123EA2CE06B438]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Trials started per month' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_C188DFEE5EE94195A14AFA62948D7C8C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Enrollment vs. Phases' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7_7A374A8F85A54BADB31C98A6FBA28686]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Status vs. Phase' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_85F9CD80BE2944D79E33258267D3CB92]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Trial Status Distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Completed Trials'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Conditions]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Funded Bys]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sponsor/Collaborators]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]'>
+            <groupfilter function='level-members' level='[Conditions]' user:ui-action-filter='[Action9_06FFCBD4E40B4213B3FA720728A6CB11]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action8_D7DAF41CBBB345C29A581AD7E7415A23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action10_5ECAD3E3366643C4B114FDB5C0111308]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139336458241]' />
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_FE6C129C711C4D7AA5770D9390A27985]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Funded Bys]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]'>
+            <groupfilter function='level-members' level='[Sponsor/Collaborators]' user:ui-action-filter='[Action7_05C859E24E264749A2B00351466E07B1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action5_054541205F0D4F1CB5DA98A3600666ED]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]'>
+            <groupfilter expression='STARTSWITH(LOWER([Status]), LOWER(&apos;Completed&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Completed' user:ui-pattern_type='starts-with'>
+              <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3293370008468628' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{62E2E4B8-BEED-4804-BEBF-B5D595048611}' />
+    </worksheet>
+    <worksheet name='Enrollment vs. Phases'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Enrollment vs. Phases</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='integer' name='[Enrollment]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_786441139599192066]' derivation='None' name='[none:Calculation_786441139599192066:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Enrollment]' derivation='Sum' name='[sum:Enrollment:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action4_5DA89C05CFAB49FA9479213081B4DEE0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[sum:Enrollment:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[sum:Enrollment:qk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' />
+              <size column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[sum:Enrollment:qk]</rows>
+        <cols>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Calculation_786441139599192066:nk]</cols>
+      </table>
+      <simple-id uuid='{1FB823FA-FCCF-4CDC-8A61-7DF04B3E1FE8}' />
+    </worksheet>
+    <worksheet name='Number of Trials by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Number of Trials by Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_786441139336458241]' derivation='None' name='[none:Calculation_786441139336458241:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Calculation_786441139336458241:nk]' />
+              <geometry column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Latitude (generated)]</rows>
+        <cols>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{24E9137C-0C92-4AD1-AEC2-5CC423F372FB}' />
+    </worksheet>
+    <worksheet name='Recruiting Trials '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Conditions]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Funded Bys]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sponsor/Collaborators]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]'>
+            <groupfilter function='level-members' level='[Conditions]' user:ui-action-filter='[Action9_06FFCBD4E40B4213B3FA720728A6CB11]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action8_D7DAF41CBBB345C29A581AD7E7415A23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action10_5ECAD3E3366643C4B114FDB5C0111308]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139336458241]' />
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_FE6C129C711C4D7AA5770D9390A27985]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Funded Bys]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]'>
+            <groupfilter function='level-members' level='[Sponsor/Collaborators]' user:ui-action-filter='[Action7_05C859E24E264749A2B00351466E07B1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]'>
+            <groupfilter expression='CONTAINS(LOWER([Status]), LOWER(&apos;Recruiting&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Recruiting' user:ui-pattern_type='contains'>
+              <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.2413811683654785' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{51F99942-64F8-467A-B411-BE05F750C42E}' />
+    </worksheet>
+    <worksheet name='Status vs. Phase'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Status vs. Phase</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_786441139599192066]' derivation='None' name='[none:Calculation_786441139599192066:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action4_5DA89C05CFAB49FA9479213081B4DEE0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' />
+              <text column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='5' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]</rows>
+        <cols>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Calculation_786441139599192066:nk]</cols>
+      </table>
+      <simple-id uuid='{9A4932EA-48C9-4E41-93BF-A29C0F0BE7CD}' />
+    </worksheet>
+    <worksheet name='Total Trials Card'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Conditions]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Funded Bys]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sponsor/Collaborators]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]'>
+            <groupfilter function='level-members' level='[Conditions]' user:ui-action-filter='[Action9_06FFCBD4E40B4213B3FA720728A6CB11]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action8_D7DAF41CBBB345C29A581AD7E7415A23]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action10_5ECAD3E3366643C4B114FDB5C0111308]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139336458241]' />
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action6_FE6C129C711C4D7AA5770D9390A27985]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Funded Bys]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]'>
+            <groupfilter function='level-members' level='[Sponsor/Collaborators]' user:ui-action-filter='[Action7_05C859E24E264749A2B00351466E07B1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Funded Bys,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Sponsor/Collaborators)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country,MONTH(Start Date))]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Conditions)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3293370008468628' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{97CE59F2-849B-451D-A6BA-29E262CDD261}' />
+    </worksheet>
+    <worksheet name='Trial Status Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Trial Status Distribution</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action4_5DA89C05CFAB49FA9479213081B4DEE0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action5_DCC0BFDE2381488092123EA2CE06B438]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Start Date:ok]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]'>
+            <groupfilter function='level-members' level='[none:Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (MONTH(Start Date),Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]' scope='cols' value='Count of NCT Number' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]</rows>
+        <cols>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]</cols>
+      </table>
+      <simple-id uuid='{FD5E6825-5C5F-400A-A4A5-1773C0F47E4A}' />
+    </worksheet>
+    <worksheet name='Trials started per month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Trials started per month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID clinical trials' name='federated.1u9im6j1ba9nrx18xo4i10j3y0ax' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u9im6j1ba9nrx18xo4i10j3y0ax'>
+            <column caption='Country' datatype='string' name='[Calculation_786441139336458241]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='TRIM(SPLIT([Locations], &quot;,&quot;, -1))' />
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='%null%' value='&quot;India&quot;' />
+                <semantic-value key='&quot;Islamic Republic of&quot;' value='&quot;Albania&quot;' />
+                <semantic-value key='&quot;Republic of&quot;' value='&quot;India&quot;' />
+                <semantic-value key='&quot;The Democratic Republic of the&quot;' value='&quot;Australia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Phase Clean' datatype='string' name='[Calculation_786441139599192066]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([Phases]) OR TRIM([Phases]) = &apos;&apos; THEN &apos;Not Specified&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 1&apos;) THEN &apos;Phase 1&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 2&apos;) THEN &apos;Phase 2&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 3&apos;) THEN &apos;Phase 3&apos;&#13;&#10;ELSEIF CONTAINS([Phases], &apos;Phase 4&apos;) THEN &apos;Phase 4&apos;&#13;&#10;ELSE &apos;Other/Multiple&apos; END' />
+            </column>
+            <column datatype='string' name='[Locations]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NCT Number]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Phases]' role='dimension' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Start Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[NCT Number]' derivation='CountD' name='[ctd:NCT Number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start Date]' derivation='Month' name='[mn:Start Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NCT Number]' derivation='None' name='[none:NCT Number:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Calculation_786441139336458241]' user:ui-action-filter='[Action4_5DA89C05CFAB49FA9479213081B4DEE0]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action7_7A374A8F85A54BADB31C98A6FBA28686]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_786441139599192066]' />
+              <groupfilter function='level-members' level='[Status]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]'>
+            <groupfilter function='level-members' level='[Status]' user:ui-action-filter='[Action8_85F9CD80BE2944D79E33258267D3CB92]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]'>
+            <groupfilter function='level-members' level='[none:NCT Number:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:NCT Number:nk]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Country)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Phase Clean,Status)]</column>
+            <column>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[Action (Status)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[ctd:NCT Number:qk]</rows>
+        <cols>[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[mn:Start Date:ok]</cols>
+      </table>
+      <simple-id uuid='{EDB8E9DB-1E4C-4F8A-AA39-430F5D2E56DD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89609' id='12' param='horz' type-v2='layout-flow' w='99004' x='498' y='9468'>
+            <zone h='89609' id='10' type-v2='layout-basic' w='89907' x='498' y='9468'>
+              <zone h='13494' id='3' name='Total Trials Card' w='29779' x='498' y='9468'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13494' id='5' name='Completed Trials' w='33403' x='30277' y='9468'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13494' id='6' name='Recruiting Trials ' w='26725' x='63680' y='9468'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37530' id='7' name='Number of Trials by Country' w='48478' x='498' y='61547'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38585' id='8' name='Trial Status Distribution' w='44953' x='498' y='22962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38585' id='9' name='Status vs. Phase' w='22477' x='45451' y='22962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38585' id='14' name='Enrollment vs. Phases' w='22477' x='67928' y='22962'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37530' id='16' name='Trials started per month' w='41429' x='48976' y='61547'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='146' h='89609' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='9097' x='90405' y='9468'>
+              <zone fixed-size='367' h='43253' id='13' is-fixed='true' name='Status vs. Phase' pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type-v2='color' w='9097' x='90405' y='9468'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='402' h='46356' id='15' is-fixed='true' name='Enrollment vs. Phases' pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type-v2='size' w='9097' x='90405' y='52721'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='8545' id='17' type-v2='text' w='99004' x='498' y='923'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Global COVID-19 Clinical Trials Analysis</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='22' param='vert' type-v2='layout-flow' w='99002' x='499' y='924'>
+                <zone forceUpdate='true' h='8545' id='17' type-v2='text' w='99002' x='499' y='924'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Global COVID-19 Clinical Trials Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='13494' id='3' is-fixed='true' name='Total Trials Card' w='29777' x='499' y='9469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='13494' id='5' is-fixed='true' name='Completed Trials' w='33401' x='30276' y='9469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='13494' id='6' is-fixed='true' name='Recruiting Trials ' w='26722' x='63677' y='9469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38584' id='8' is-fixed='true' name='Trial Status Distribution' w='44950' x='499' y='22963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38584' id='9' is-fixed='true' name='Status vs. Phase' w='22475' x='45449' y='22963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='367' h='43303' id='13' name='Status vs. Phase' pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type-v2='color' w='9102' x='90399' y='9469'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38584' id='14' is-fixed='true' name='Enrollment vs. Phases' w='22475' x='67924' y='22963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='402' h='46304' id='15' name='Enrollment vs. Phases' pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type-v2='size' w='9102' x='90399' y='52772'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37529' id='7' is-fixed='true' name='Number of Trials by Country' w='48475' x='499' y='61547'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37529' id='16' is-fixed='true' name='Trials started per month' w='41425' x='48974' y='61547'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DDFED042-63F8-4874-A571-A196DC13BDF8}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Completed Trials'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4253FE84-05EE-4C00-A39A-7B5EA996633D}' />
+    </window>
+    <window class='worksheet' name='Total Trials Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D1C8899-BC34-4D26-8B22-4CF032E17291}' />
+    </window>
+    <window class='worksheet' name='Recruiting Trials '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1DC9A83C-398B-4EC0-BE51-9F2B260F7D9E}' />
+    </window>
+    <window class='worksheet' name='Number of Trials by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A3626A38-7616-4B65-BBFD-7309DC7C8A12}' />
+    </window>
+    <window class='worksheet' name='Trial Status Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78433CAF-07B9-4DC5-B906-32DBB08CE641}' />
+    </window>
+    <window class='worksheet' name='Status vs. Phase'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC3F05F0-D8FE-4554-B6B8-38877D1ACB00}' />
+    </window>
+    <window class='worksheet' name='Enrollment vs. Phases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B3D0D2A-E824-4F20-AE79-8AA6E96F7EF9}' />
+    </window>
+    <window class='worksheet' name='Trials started per month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u9im6j1ba9nrx18xo4i10j3y0ax].[none:Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41AFB361-2AAE-4BCD-A6CF-86F0A4F22FF0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Completed Trials'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Enrollment vs. Phases'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Trials by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Recruiting Trials '>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Status vs. Phase'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Trials Card'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Trial Status Distribution' />
+        <viewpoint name='Trials started per month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{BDE8C1A1-BD9D-48DA-9996-31D1506DCB58}' />
+    </window>
+  </windows>
+</workbook>
