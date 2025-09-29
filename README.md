@@ -58,7 +58,7 @@ An interactive dashboard was created using **Tableau**, presenting:
 - Country-wise trial counts  
 - Timeline of clinical trial initiation  
 
-![Dashboard Preview](dashboard.jpg)
+![Dashboard Preview](Tableau/Dashboard.png)
 
 ---
 
@@ -69,4 +69,59 @@ An interactive dashboard was created using **Tableau**, presenting:
 git clone https://github.com/your-username/covid19-clinical-trials-analysis.git
 cd covid19-clinical-trials-analysis
 
+2️⃣ Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Run the notebook
+jupyter notebook analysis_and_model.ipynb
+
+📚 Dataset
+
+Source: ClinicalTrials.gov
+
+Direct Download: Dataset Link
+
+⚠️ Note: The full dataset is large and not included in this repository. Please use the link above to download and place it in the data/ folder.
+
+🏁 Results
+
+Cleaned and processed 5783 clinical trials with 25+ features
+
+Built a Random Forest model achieving ~56% accuracy
+
+Identified key trends in research activity, demographics, and outcomes
+
+Built a Tableau dashboard summarizing the most impactful insights
+
+🤝 Contributing
+
+Contributions are welcome!
+To contribute:
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature-name)
+
+Commit your changes (git commit -m "Add feature")
+
+Push to the branch (git push origin feature-name)
+
+Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License
+.
+
+🙏 Acknowledgements
+
+ClinicalTrials.gov
+ for providing publicly available data.
+
+All researchers and contributors working on COVID-19 research worldwide.
+
+Project inspired by the need to analyze and visualize the landscape of global clinical research.
