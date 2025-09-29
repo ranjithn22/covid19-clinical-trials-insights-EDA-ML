@@ -67,7 +67,7 @@ An interactive dashboard was created using **Tableau**, presenting:
 ### 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/your-username/covid19-clinical-trials-analysis.git
-cd covid19-clinical-trials-analysis
+cd covid19-clinical-trials-analysis ```
 
 2️⃣ Create a virtual environment (optional but recommended)
 python -m venv venv
