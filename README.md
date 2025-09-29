@@ -64,38 +64,25 @@ An interactive dashboard was created using **Tableau**, presenting:
 
 ## 📦 Installation & Usage
 
-### 1️⃣ Clone this repository
+## 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/your-username/covid19-clinical-trials-analysis.git
 cd covid19-clinical-trials-analysis
 ```
 
-2️⃣ Create a virtual environment (optional but recommended)
+## 2️⃣ Create a virtual environment (optional but recommended)
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment
-
-```bash
-
-On macOS/Linux:
-
-source venv/bin/activate
-
-On Windows:
-
-venv\Scripts\activate
-```
-
-3️⃣ Install dependencies
+## 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4️⃣ Run the Jupyter notebook
+## 4️⃣ Run the Jupyter notebook
 
 ```bash
 jupyter notebook analysis_and_model.ipynb
