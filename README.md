@@ -64,39 +64,31 @@ An interactive dashboard was created using **Tableau**, presenting:
 
 ## 📦 Installation & Usage
 
-## 1️⃣ Clone this repository
+### 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/your-username/covid19-clinical-trials-analysis.git
 cd covid19-clinical-trials-analysis
 ```
 
-## 2️⃣ Create a virtual environment (optional but recommended)
+### 2️⃣ Create a virtual environment (optional but recommended)
 
 ```bash
 python -m venv venv
 ```
 
-## 3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Run the Jupyter notebook
+### 4️⃣ Run the Jupyter notebook
 
 ```bash
 jupyter notebook analysis_and_model.ipynb
 ```
 
-📚 Dataset
-
-Source: ClinicalTrials.gov
-
-Direct Download: Dataset Link
-
-⚠️ The full dataset is large and not included in this repository. Download it from the link above and place it in the data/ folder.
-
-🏁 Results
+## 🏁 Results
 
 Cleaned and processed 5,783 clinical trials with 25+ features.
 
